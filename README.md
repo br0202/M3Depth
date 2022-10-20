@@ -1,7 +1,7 @@
 ## [Self-Supervised Depth Estimation in Laparoscopic Image using 3D Geometric Consistency](https://arxiv.org/abs/2208.08407) (MICCAI 2022)
 By [Baoru Huang](https://baoru.netlify.app/), Jian-Qing Zheng, [Anh Nguyen](https://www.csc.liv.ac.uk/~anguyen), Chi Xu, Ioannis Gkouzionis, Kunal Vyas, David Tuch, Stamatia Giannarou, Daniel S. Elson
 
-![image](https://raw.githubusercontent.com/br0202/M3Depth/master/vis/frameworks.png?token=GHSAT0AAAAAABMPJV2NTUZWZZ376R7MIIH2Y2RTEUQ "m3depth")
+![image](https://raw.githubusercontent.com/nqanh/affordance-net/master/tools/temp_output/iit_aff_dataset.jpg "affordance-net")
 
 ### Contents
 1. [Requirements](#requirements)
@@ -32,18 +32,13 @@ By [Baoru Huang](https://baoru.netlify.app/), Jian-Qing Zheng, [Anh Nguyen](http
 
 2. Train M3Depth:
 	- `cd $M3Depth`
-	- `./experiments/scripts/faster_rcnn_end2end.sh [GPU_ID] [NET] [--set ...]`
-	- e.g.: `./experiments/scripts/faster_rcnn_end2end.sh 0 VGG16 pascal_voc`
-	- We use `pascal_voc` alias although we're training using the IIT-AFF dataset.
+	- `python main.py --mode train`
+	
 
 3. Test M3Depth:
     - `cd $M3Depth`
-    - ....
+    - `python main.py --mode test`
 
-
-4. Results
-
-![image_results](https://raw.githubusercontent.com/br0202/M3Depth/master/vis/quan_results.png?token=GHSAT0AAAAAABMPJV2N7HJU4OQVFL6HOD2MY2RTFSA "results")
 
 
 ### Citing 
