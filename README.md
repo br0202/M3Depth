@@ -13,7 +13,7 @@ By [Baoru Huang](https://baoru.netlify.app/), Jian-Qing Zheng, [Anh Nguyen](http
 ### Requirements
 
 1. Python version 3.8.5
-2. Pytorch version: pytorch==1.6.0 torchvision==0.8.2 torchaudio==0.7.0 cudatoolkit=10.2.89 -c pytorch
+2. Pytorch version: pytorch==1.6.0 torchvision==0.8.2 torchaudio==0.7.0 cudatoolkit=10.2.89
 3. pytorch3d version 0.3.0
 2. Cuda version 10.2
 
