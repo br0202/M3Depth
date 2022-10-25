@@ -31,16 +31,10 @@ def return_arguments():
 
     parser.add_argument('--data_dir',
                         type=str,
-                        help='path to the dataset folder. \
-                        It should contain subfolders with following structure:\
-                        "image_02/data" for left images and \
-                        "image_03/data" for right images',
+                        help='path to the dataset folder',
                         default='/disk_three/Dataset/Endovis_depth')
     parser.add_argument('--val_data_dir',
-                        help='path to the validation dataset folder. \
-                            It should contain subfolders with following structure:\
-                            "image_02/data" for left images and \
-                            "image_03/data" for right images',
+                        help='path to the validation dataset folder',
                         default='/disk_three/Dataset/Endovis_depth/Test')
     parser.add_argument('--split',
                         type=str,

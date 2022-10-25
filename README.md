@@ -5,9 +5,8 @@ By [Baoru Huang](https://baoru.netlify.app/), Jian-Qing Zheng, [Anh Nguyen](http
 
 ### Contents
 1. [Requirements](#requirements)
-2. [Installation](#installation)
-3. [Training&Testing](#training)
-4. [Notes](#notes)
+2. [Training&Testing](#training)
+3. [Notes](#notes)
 
 
 ### Requirements
@@ -17,26 +16,19 @@ By [Baoru Huang](https://baoru.netlify.app/), Jian-Qing Zheng, [Anh Nguyen](http
 3. pytorch3d version 0.3.0
 2. Cuda version 10.2
 
-### Installation
-
-1. Clone the repository into your `$M3Depth` folder.
-	
-	
-2. Build ....
-
 	
 ### Training & Testing
 
-1. We train M3Depth on [UPDATE_HERE dataset](https://sites.google.com/site/iitaffdataset/)
-	- We need to format IIT-AFF dataset as in Pascal-VOC dataset for training.
-	- For your convinience, we did it for you. Just download this file ([Google Drive](https://drive.google.com/file/d/0Bx3H_TbKFPCjV09MbkxGX0k1ZEU/view?usp=sharing), [One Drive](https://studenthcmusedu-my.sharepoint.com/:u:/g/personal/nqanh_mso_hcmus_edu_vn/EXQok71Y2kFAmhaabY2TQO8BFIO1AqqH5GcMOfPqgn_q2g?e=7rH3Kd)) and extract it into your `$AffordanceNet_ROOT` folder.
-	- The extracted folder should contain three sub-folders: `$AffordanceNet_ROOT/data/cache`, `$AffordanceNet_ROOT/data/imagenet_models`, and `$AffordanceNet_ROOT/data/VOCdevkit2012` .
+1. We train M3Depth on [SCARED](https://endovissub2019-scared.grand-challenge.org/)
+	- We need to extract images from the videos and rectify the stereo image pairs with the given camera parameters (endoscope_calibration.yaml). 
+	- Only keyframes were together with accurate depth maps. 
+	- Sort the absolute image root and save them in `$splits/Endovis_origin/train_files.txt`.
+	- Change the data directory to the folder of data.
 
 2. Train M3Depth:
 	- `cd $M3Depth`
 	- `python main.py --mode train`
 	
-
 3. Test M3Depth:
     - `cd $M3Depth`
     - `python main.py --mode test`
