@@ -42,7 +42,7 @@ By [Baoru Huang](https://baoru.netlify.app/), Jian-Qing Zheng, [Anh Nguyen](http
     - `python main.py --mode test`
 
 4. Results
-![image](https://raw.githubusercontent.com/br0202/M3Depth/master/vis/quan_results.png?token=GHSAT0AAAAAABMPJV2M2JD5LX4WWTGKP2YWY2RTR7A "results")
+![image](https://github.com/br0202/M3Depth/blob/master/vis/quan_results.png "results")
 
 
 ### Citing 
