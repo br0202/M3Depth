@@ -55,4 +55,6 @@ If you find our paper useful in your research, please consider citing:
 MIT License
 
 ### Acknowledgement
-This repo used a lot of source code from [UPDATE_HERE](https://github.com/rbgirshick/UPDATE_LINK)
+1. This repo used a lot of source code from [monodepth](https://github.com/mrharicot/monodepth) and [monodepth2](https://github.com/nianticlabs/monodepth2)
+
+2. This work was supported by the UK National Institute for Health Research (NIHR) Invention for Innovation Award NIHR200035, the Cancer Research UK Imperial Centre, the Royal Society (UF140290) and the NIHR Imperial Biomedical Research Centre.
